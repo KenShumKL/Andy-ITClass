@@ -13,12 +13,12 @@ public class Problem002 {
 
 	public static void main(String[] args) {
 		int i = 2;
-		long next = (long) UsefulMethodMath.getFibonacci(2);
-		long sum = 0l;
+		int next = UsefulMethodMath.getFibonacci(2);
+		int sum = 0;
 		
 		while(next <= 4000000) {
 			if (next % 2 == 0) sum += next;
-			next = (long) UsefulMethodMath.getFibonacci(++i);
+			next = UsefulMethodMath.getFibonacci(++i);
 		}
 		
 		System.out.println(sum); // The answer should be 4613732.
