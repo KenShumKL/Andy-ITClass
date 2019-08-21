@@ -1,6 +1,12 @@
 package andy.EulerProject;
 
-import andy.UsefulMethod.UsefulMethod;
+import andy.UsefulMethod.*;
+
+/**
+ * 
+ * @author Andy
+ *
+ */
 
 //Multiples of 3 and 5
 public class Problem001 {
