@@ -8,6 +8,7 @@ import andy.UsefulMethod.UsefulMethodMathL;
  *
  */
 
+//Largest prime factor
 public class Problem003 {
 
 	public static void main(String[] args) {
@@ -16,6 +17,8 @@ public class Problem003 {
 		for (long i=2l; i<target; i++) {
 			//????
 		}
+		
+		//The answer should be 6857.
 	}
 	
 }

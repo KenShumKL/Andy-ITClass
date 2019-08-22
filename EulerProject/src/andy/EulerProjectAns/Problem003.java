@@ -8,6 +8,7 @@ import andy.UsefulMethod.UsefulMethodMathL;
  *
  */
 
+//Largest prime factor
 public class Problem003 {
 
 	public static void main(String[] args) {
@@ -24,7 +25,7 @@ public class Problem003 {
 				 * (i.e. 3 = 6 / 2)
 				 */
 				if (UsefulMethodMathL.isPrime(inverse)) {
-					System.out.println(inverse);
+					System.out.println(inverse); //The answer should be 6857.
 					break;
 				}
 			}
