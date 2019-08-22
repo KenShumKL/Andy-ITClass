@@ -15,7 +15,7 @@ import java.util.*;
 public class AndyMath {
 	
 	
-	//int part
+	// int part
 	
 	/**
 	 * 
@@ -46,7 +46,7 @@ public class AndyMath {
 	
 	/**
 	 * 
-	 * @param pos :any positive integer 
+	 * @param pos : any positive integer 
 	 * @return The next Fibonacci number at "pos"
 	 * 
 	 * @link https://en.wikipedia.org/wiki/Fibonacci
@@ -60,8 +60,8 @@ public class AndyMath {
 
 	/**
 	 * 
-	 * @param a :any positive integer 
-	 * @param b :any positive integer 
+	 * @param a : any positive integer 
+	 * @param b : any positive integer 
 	 * @return GCD(i.e. HCF) of a and b 
 	 */
 	public static int getGCD(int a, int b) {
@@ -72,8 +72,8 @@ public class AndyMath {
 	
 	/**
 	 * 
-	 * @param a :any positive integer 
-	 * @param b :any positive integer 
+	 * @param a : any positive integer 
+	 * @param b : any positive integer 
 	 * @return LCM of a and b 
 	 */
 	public static int getLCM(int a, int b) {
@@ -83,7 +83,7 @@ public class AndyMath {
 	
 	/**
 	 * 
-	 * @param input :any positive integer 
+	 * @param input : any positive integer 
 	 * @return Factorial of input, i.e. 
 	 * let input be n, 
 	 * return n!
@@ -95,7 +95,51 @@ public class AndyMath {
 		return input * getFactorial(input-1);
 	}
 	
-	//long part
+	
+	/**
+	 * 
+	 * @param row : any positive integer
+	 * @return Triangle number (1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...)
+	 */
+	public static int getTriangleNum(int row){
+		if (row < 1l) return -1;
+        int sum = 0;
+        for (int i=0; i<=row; i++) {
+        	sum += i;
+        }
+        return sum;
+    }
+	
+	/**
+	 * 
+	 * @param input : any positive integer
+	 * @return Number of divisors (factors)
+	 */
+	public static int getNoOfDivisor(int input) {
+        int count = 0;
+        int end = (int) Math.sqrt(input);
+        for (int i=1; i<=end; i++) {
+            if (input % i == 0) count += 2;
+        }
+        if (isPerfectSquare(input)) count++;
+        return count;
+    }
+	
+	
+	/**
+	 * 
+	 * @param input : any positive integer
+	 * @return true : Input is a perfect square
+	 *  esle false
+	 */
+	public static boolean isPerfectSquare(int input) {
+		return (isInt(Math.sqrt(input)))? true : false;
+	}
+	
+	
+	/*
+	 * long part
+	 */
 	
 	/**
 	 * 
@@ -174,6 +218,45 @@ public class AndyMath {
 		return input * getFactorial(input-1);
 	}
 	
+	/**
+	 * 
+	 * @param row : any positive number (May cause StackOverflowError)
+	 * @return Triangle number (1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...)
+	 */
+	public static long getTriangleNum(long row){
+        if (row < 1l) return -1l;
+        long sum = 0l;
+        for (long i=0l; i<=row; i++) {
+        	sum += i;
+        }
+        return sum;
+    }
+	
+	
+	/**
+	 * 
+	 * @param input : any positive number
+	 * @return Number of divisors (factors)
+	 */
+	public static long getNoOfDivisor(long input) {
+		long count = 0;
+		long end = (long) Math.sqrt(input);
+        for (long i=1l; i<=end; i++) {
+            if (input % i == 0) count += 2;
+        }
+        if (isPerfectSquare(input)) count++;
+        return count;
+    }
+	
+	/**
+	 * 
+	 * @param input : any positive integer
+	 * @return true : Input is a perfect square
+	 *  esle false
+	 */
+	public static boolean isPerfectSquare(long input) {
+		return (isInt(Math.sqrt(input)))? true : false;
+	}
 	
 	
 	
