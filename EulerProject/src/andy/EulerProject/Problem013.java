@@ -2,6 +2,13 @@ package andy.EulerProject;
 
 import java.math.BigInteger;
 
+/**
+ * 
+ * @author Andy
+ *Very difficult.
+ */
+
+//Large sum
 public class Problem013 {
 
 	public static void main(String[] args) {

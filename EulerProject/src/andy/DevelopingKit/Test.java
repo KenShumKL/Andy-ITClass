@@ -11,7 +11,7 @@ import andy.UsefulMethod.*;
 public class Test {
 
 	public static void main(String[] args) {
-		System.out.println(AndyMath.getTriangleNum(12375));
+		System.out.println(AndyMath.getFactorial(4l));
 	}
 	
 	public static void printArr(int[] arr) {

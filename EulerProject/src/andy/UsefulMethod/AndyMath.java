@@ -14,9 +14,10 @@ import java.util.*;
 @SuppressWarnings("unused")
 public class AndyMath {
 	
+	// boolean part
 	
-	// int part
 	
+	// Prime
 	/**
 	 * 
 	 * @param input : an Integer
@@ -32,6 +33,46 @@ public class AndyMath {
 		for (int i=2; i <=(int) Math.abs(Math.sqrt(input)); i++) if (input % i == 0) return false;
 		return true;
 	}
+	
+	/**
+	 * 
+	 * @param input : an Integer
+	 * @return true for a prime number, else return false.
+	 * 
+	 * A prime number should be >1 and it is an integer.
+	 * @link https://en.wikipedia.org/wiki/Prime_number
+	 */
+	public static boolean isPrime(long input) {
+		if (input <= 1) return false;
+		if (input == 2) return true;
+		for (long i=2; i <=(long) Math.abs(Math.sqrt(input)); i++) if (input % i == 0) return false;
+		return true;
+	}
+	
+	
+	/**
+	 * 
+	 * @param input : any positive integer
+	 * @return true : Input is a perfect square
+	 *  esle false
+	 */
+	public static boolean isPerfectSquare(int input) {
+		return (isInt(Math.sqrt(input)))? true : false;
+	}
+	
+	/**
+	 * 
+	 * @param input : any positive integer
+	 * @return true : Input is a perfect square
+	 *  esle false
+	 */
+	public static boolean isPerfectSquare(long input) {
+		return (isInt(Math.sqrt(input)))? true : false;
+	}
+	
+	
+	
+	// int part
 	
 	/**
 	 * 
@@ -126,35 +167,13 @@ public class AndyMath {
     }
 	
 	
-	/**
-	 * 
-	 * @param input : any positive integer
-	 * @return true : Input is a perfect square
-	 *  esle false
-	 */
-	public static boolean isPerfectSquare(int input) {
-		return (isInt(Math.sqrt(input)))? true : false;
-	}
+	
 	
 	
 	/*
 	 * long part
 	 */
 	
-	/**
-	 * 
-	 * @param input : an Integer
-	 * @return true for a prime number, else return false.
-	 * 
-	 * A prime number should be >1 and it is an integer.
-	 * @link https://en.wikipedia.org/wiki/Prime_number
-	 */
-	public static boolean isPrime(long input) {
-		if (input <= 1) return false;
-		if (input == 2) return true;
-		for (long i=2; i <=(long) Math.abs(Math.sqrt(input)); i++) if (input % i == 0) return false;
-		return true;
-	}
 	
 	/**
 	 * 
@@ -165,6 +184,22 @@ public class AndyMath {
 	public static long getPrime(long from) {
 		while (!isPrime(++from));
 		return from;
+	}
+	
+	/**
+	 * 
+	 * @param n : Object : any positive integer
+	 * @param r : Sample : any positive integer
+	 * @return nCr
+	 */
+	public static long binomial(int n, int r) {
+		long temp;
+		
+		temp = getFactorial((long) (n - r) );
+		temp *= getFactorial((long) r);
+		temp = getFactorial((long) n) / temp;
+		
+		return temp;
 	}
 	
 	/**
@@ -215,7 +250,12 @@ public class AndyMath {
 		if (input < 0) return -1;
 		if (input == 0 || input == 1) return 1;
 		
-		return input * getFactorial(input-1);
+		long product = 1l;
+		for (long i=1l; i<=input; i++) {
+			product *= i;
+		}
+		
+		return product;
 	}
 	
 	/**
@@ -247,18 +287,6 @@ public class AndyMath {
         if (isPerfectSquare(input)) count++;
         return count;
     }
-	
-	/**
-	 * 
-	 * @param input : any positive integer
-	 * @return true : Input is a perfect square
-	 *  esle false
-	 */
-	public static boolean isPerfectSquare(long input) {
-		return (isInt(Math.sqrt(input)))? true : false;
-	}
-	
-	
 	
 	/*
 	 * Integer compare

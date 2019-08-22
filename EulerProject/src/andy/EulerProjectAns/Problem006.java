@@ -15,11 +15,11 @@ public class Problem006 {
 		int sum = 0;
 		int sqSum = 0;
 		
-		for (int i=1; i<=100l; i++) {
+		for (int i=1; i<=100; i++) {
 			sum += Math.pow(i, 2);
 		}
 		
-		for (int i=1; i<=100l; i++) {
+		for (int i=1; i<=100; i++) {
 			sqSum += i;
 		}
 		sqSum = (int) Math.pow(sqSum, 2);
