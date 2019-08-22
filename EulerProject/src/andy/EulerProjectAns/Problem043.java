@@ -15,7 +15,7 @@ import andy.UsefulMethod.*;
 //Unsolved
 public class Problem043 {
 
-	static UsefulMethodMath andy = new UsefulMethodMath();
+	static AndyMath andy = new AndyMath();
 	public static void main(String[] args) {
 		int[] nums = new int [10];
 		
@@ -51,7 +51,7 @@ public class Problem043 {
 		int[] temp = new int [0];
 		for (int i=input; i<=987; i++) {
 			if (i % input == 0) {
-				temp = UsefulMethodArr.addElement(temp, i);
+				temp = AndyArr.addElement(temp, i);
 			}
 		}
 		return temp;
@@ -67,7 +67,7 @@ public class Problem043 {
 	static int[] getUniqueArr(int[] arr) { 
 		for (int i=arr.length-1; i>=0; i--) {
 			if (!isUnique(arr[i])) {
-				arr = UsefulMethodArr.removeTheElement(arr, i);
+				arr = AndyArr.removeTheElement(arr, i);
 			}
 		}
 		return arr;
@@ -102,7 +102,7 @@ public class Problem043 {
 						fill0(Integer.toString(arr1[j])).charAt(2) == fill0(Integer.toString(arr2[k])).charAt(1)
 						) {
 					
-					temp = UsefulMethodArr.addElement(temp, arr2[k]); 
+					temp = AndyArr.addElement(temp, arr2[k]); 
 				}
 			}
 		}

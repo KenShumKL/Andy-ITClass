@@ -9,7 +9,7 @@ import java.util.*;
  */
 
 //Array treatment
-public class UsefulMethodArr {
+public class AndyArr {
 	
 	public static int[] removeTheElement(int[] arr, int index)  { 
 		// If the array is empty 

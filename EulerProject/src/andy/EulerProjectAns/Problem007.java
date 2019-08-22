@@ -1,6 +1,6 @@
 package andy.EulerProjectAns;
 
-import andy.UsefulMethod.UsefulMethodMath;; 
+import andy.UsefulMethod.AndyMath;; 
 
 /**
  * 
@@ -15,7 +15,7 @@ public class Problem007 {
 
 		int prime = 0;
 		for (int i=0; i<10001; i++) {
-			prime = UsefulMethodMath.getPrime(prime);
+			prime = AndyMath.getPrime(prime);
 		}
 		
 		System.out.println(prime); // The answer should be 104743.

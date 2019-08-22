@@ -13,7 +13,7 @@ public class Problem002 {
 
 	public static void main(String[] args) {
 		int i = 2;
-		int next = UsefulMethodMath.getFibonacci(i);
+		int next = AndyMath.getFibonacci(i);
 		int sum = 0;
 		
 		while(next <= /*What*/) {

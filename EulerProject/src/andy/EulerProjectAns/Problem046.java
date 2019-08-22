@@ -31,7 +31,7 @@ public class Problem046 {
 		do {
 			from++;
 		}
-		while(UsefulMethodMath.isPrime(from) || from % 2 == 0);
+		while(AndyMath.isPrime(from) || from % 2 == 0);
 		return from;
 	}
 
@@ -39,7 +39,7 @@ public class Problem046 {
 		// Test for is K exist
 		int[] primes = {2};
 		while (primes[primes.length-1] < input) {
-			primes = UsefulMethodArr.addElement(primes, UsefulMethodMath.getPrime(primes.length-1));
+			primes = AndyArr.addElement(primes, AndyMath.getPrime(primes.length-1));
 		}
 		
 		for (int p=0; p<primes.length; p++) {

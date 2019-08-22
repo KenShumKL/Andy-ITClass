@@ -1,6 +1,6 @@
 package andy.EulerProjectAns;
 
-import andy.UsefulMethod.UsefulMethodMathL;
+import andy.UsefulMethod.AndyMath;
 
 /**
  * 
@@ -24,7 +24,7 @@ public class Problem003 {
 				 * by larger corresponding factor(inverse) = original number(target) / smaller factor(i)  
 				 * (i.e. 3 = 6 / 2)
 				 */
-				if (UsefulMethodMathL.isPrime(inverse)) {
+				if (AndyMath.isPrime(inverse)) {
 					System.out.println(inverse); //The answer should be 6857.
 					break;
 				}

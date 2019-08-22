@@ -1,6 +1,6 @@
 package andy.EulerProjectAns;
 
-import andy.UsefulMethod.UsefulMethodMath;
+import andy.UsefulMethod.AndyMath;
 
 /**
  * 
@@ -29,7 +29,7 @@ public class Problem034 {
 		String inputS = Integer.toString(input);
 		
 		for (int i=0; i<inputS.length(); i++) {
-			 sum += UsefulMethodMath.getFactorial(Integer.parseInt(Character.toString(inputS.charAt(i))));
+			 sum += AndyMath.getFactorial(Integer.parseInt(Character.toString(inputS.charAt(i))));
 		}
 		
 		return sum;

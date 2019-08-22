@@ -19,7 +19,7 @@ public class Problem035 {
 	public static boolean isCircularPrime(int input) {
 		String inputS = Integer.toString(input);
 		for (int i=0; i<inputS.length(); i++) {
-			if (!(UsefulMethodMath.isPrime(Integer.parseInt(UsefulMethodStr.rotate(inputS, i))))) return false;
+			if (!(AndyMath.isPrime(Integer.parseInt(AndyStr.rotate(inputS, i))))) return false;
 		}
 		return true;
 	}

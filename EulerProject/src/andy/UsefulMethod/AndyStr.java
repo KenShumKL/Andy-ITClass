@@ -6,7 +6,7 @@ package andy.UsefulMethod;
  *
  */
 
-public class UsefulMethodStr {
+public class AndyStr {
 	
 	public static String rotate(String input, int digit) {
 		// Check digit size
