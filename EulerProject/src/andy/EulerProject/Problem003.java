@@ -1,6 +1,6 @@
 package andy.EulerProject;
 
-import andy.UsefulMethod.UsefulMethodMathL;
+import andy.UsefulMethod.AndyMath;;
 
 /**
  * 
