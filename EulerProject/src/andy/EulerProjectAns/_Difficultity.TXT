@@ -1,0 +1,30 @@
+Required knowledge:
+How to call(use) a method?
+Logical symbol (i.e. ! , &&, ||)
+Comparison symbol (i.e. ==, !=, >, >=, <, <=)
+Basic Mathematics (+, -, *, /, remainder)
+Basic java syntax 
+
+Problem 001  1 (Out of 10)
+Problem 002 2
+Problem 003 4 (*Math)
+Problem 004 4
+Problem 005 4 (Introduction to break)
+Problem 006 1
+Problem 007 2
+Problem 008 3
+Problem 009 9 (*No Hint)
+Problem 010 3 (*For loop)
+Problem 011 7 (*2D - Array)
+Problem 012 5 (*For loop, method)
+Problem 013 7(*BigInteger)
+Problem 014 3
+Problem 015 10(* Require high level of Mathematics)
+Problem 016 2(AndyMathBig)
+Problem 017 8
+Problem 018 9
+Problem 020 2
+Problem 025 3(for method 1)  10+ (for method 2)
+Problem 034 3 
+Problem 035 6 (casting)
+Problem 046 10
