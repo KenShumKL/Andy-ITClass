@@ -1,4 +1,4 @@
-package andy.EulerProjectAns;
+package andy.EulerProject;
 
 import andy.UsefulMethod.AndyArr;
 import andy.UsefulMethod.AndyMath;
@@ -24,34 +24,20 @@ public class Problem046 {
 		}
 		
 		System.out.println(oddComposite);
-		// Output: 5777
+		// The answer should be 5777.
 
 	}
 	
 	
 	private static int getOddComposite(int from) {
-		do {
-			from++;
-		}
-		while(AndyMath.isPrime(from) || from % 2 == 0);
+		//???????????
 		return from;
 	}
 
 	private static boolean isFactorizable(int input) {
 		// Test for is K exist
 		int[] primes = {2};
-		while (primes[primes.length-1] < input) {
-			primes = AndyArr.addElement(primes, AndyMath.getPrime(primes.length-1));
-		}
-		
-		for (int p=0; p<primes.length; p++) {
-			int maxK = (int) Math.ceil(Math.abs(Math.sqrt((input - primes[p]) / 2)));
-			
-			for (int k=1; k<= maxK; k++) {
-				if (input == (primes[p] + 2* Math.pow(k, 2))) return true;
-			}
-			
-		}
+		//???????????
 		
 		return false;
 	}

@@ -288,6 +288,35 @@ public class AndyMath {
         return count;
     }
 	
+	
+	
+	
+	
+	
+	
+	
+	// String Part
+	
+	/**
+	 * 
+	 * @param input String contains number ONLY
+	 * @return Sum of their digit
+	 */
+	public static int getDigitSum(String input) {
+		int sum = 0;
+		for (int i=0; i<input.length(); i++) {
+			sum += Integer.parseInt(Character.toString(input.charAt(i)));
+		}
+		return sum; 
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * Integer compare
 	 */

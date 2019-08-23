@@ -1,4 +1,4 @@
-package andy.EulerProjectAns;
+package andy.EulerProject;
 
 import andy.UsefulMethod.AndyMath;
 import andy.UsefulMethod.AndyStr;
@@ -16,7 +16,7 @@ public class Problem035 {
 		int primeCount = 0;
 		
 		for (int i=1; i<1000000; i++) {
-			if (isCircularPrime(i)) primeCount++;
+			// One line
 		}
 		
 		System.out.println(primeCount);
@@ -25,9 +25,7 @@ public class Problem035 {
 	
 	public static boolean isCircularPrime(int input) {
 		String inputS = Integer.toString(input);
-		for (int i=0; i<inputS.length(); i++) {
-			if (!(AndyMath.isPrime(Integer.parseInt(AndyStr.rotate(inputS, i))))) return false;
-		}
+		//???????????
 		return true;
 	}
 }

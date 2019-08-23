@@ -48,4 +48,44 @@ public class AndyMathBig {
 		} 
 		return factorial;
 	}
+	
+	/**
+	 * 
+	 * @param input BigInteger
+	 * @return Sum of their digit
+	 */
+	public static long getDigitSum(BigInteger input) {
+		String inputS = input.toString();
+		long sum = 0l;
+		for (int i=0; i<inputS.length(); i++) {
+			sum += Integer.parseInt(Character.toString(inputS.charAt(i)));
+		}
+		return sum; 
+	}
+	
+	/**
+	 * 
+	 * @param pos : any positive integer 
+	 * @return The next Fibonacci number at "pos"
+	 * 
+	 * @link https://en.wikipedia.org/wiki/Fibonacci
+	 */
+	public static BigInteger getFibonacci(int pos) {
+		if (pos == 1 || pos == 2) return BigInteger.ONE;
+		
+		int posCount = 3;
+		BigInteger a = BigInteger.ONE;
+		BigInteger b = BigInteger.ONE;
+		BigInteger c = BigInteger.ZERO;
+		
+		while (posCount <= pos) {
+			c = a.add(b);
+			a = b;
+			b = c;
+			posCount++;
+		}
+		return c;
+		
+	}
+	
 }

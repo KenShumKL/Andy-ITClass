@@ -11,7 +11,7 @@ import andy.UsefulMethod.*;
 public class Test {
 
 	public static void main(String[] args) {
-		System.out.println(AndyMath.getFactorial(4l));
+		System.out.println(AndyMathBig.getFibonacci(6).toString());
 	}
 	
 	public static void printArr(int[] arr) {
@@ -21,3 +21,5 @@ public class Test {
 	}
 
 }
+
+//"If the facts don't fit the theory, get new facts" --Albert Einstein 

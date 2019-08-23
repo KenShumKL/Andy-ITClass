@@ -1,4 +1,4 @@
-package andy.EulerProjectAns;
+package andy.EulerProject;
 
 import andy.UsefulMethod.AndyMath;
 
@@ -15,7 +15,7 @@ public class Problem034 {
 		
 		int sum = 0;
 		
-		for (int i=3; i<=2540161; i++) {
+		for (int i=3; i<=/*???*/; i++) {
 			if (digitFactorial(i) == i) sum += i;
 		}
 		

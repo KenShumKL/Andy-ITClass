@@ -1,4 +1,4 @@
-package andy.EulerProjectAns;
+package andy.DevelopingKit;
 
 import andy.UsefulMethod.*;
 
