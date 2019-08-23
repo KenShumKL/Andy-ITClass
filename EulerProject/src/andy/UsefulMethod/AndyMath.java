@@ -166,6 +166,10 @@ public class AndyMath {
         return count;
     }
 	
+	public static int nCr(int n, int r) {
+		return getFactorial(n) / ( getFactorial((n-r)) * getFactorial(r) );
+	}
+	
 	
 	
 	
@@ -192,14 +196,8 @@ public class AndyMath {
 	 * @param r : Sample : any positive integer
 	 * @return nCr
 	 */
-	public static long binomial(int n, int r) {
-		long temp;
-		
-		temp = getFactorial((long) (n - r) );
-		temp *= getFactorial((long) r);
-		temp = getFactorial((long) n) / temp;
-		
-		return temp;
+	public static long nCr(long n, long r) {
+		return getFactorial(n) / ( getFactorial((n-r)) * getFactorial(r) );
 	}
 	
 	/**

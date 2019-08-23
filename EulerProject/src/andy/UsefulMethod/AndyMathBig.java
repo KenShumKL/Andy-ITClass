@@ -10,6 +10,24 @@ import java.math.*;
 
 
 public class AndyMathBig {
+	
+	
+	
+	/**
+	 * 
+	 * @param input : any positive integer 
+	 * @return Factorial of input, i.e. 
+	 * let input be n, 
+	 * return n!
+	 */
+	public static BigInteger getFactorial(int number) {
+		BigInteger factorial = BigInteger.ONE;
+		for (int i = number; i > 0; i--) {
+			factorial = factorial.multiply(BigInteger.valueOf(i)); 
+		} 
+		return factorial;
+	}
+	
 
 	/**
 	 * 
@@ -17,7 +35,7 @@ public class AndyMathBig {
 	 * @param r : Sample
 	 * @return nCr
 	 */
-	public static BigInteger getBinomial(int n, int r) {
+	public static BigInteger nCr(int n, int r) {
 		// n!
 		BigInteger nFactorial = getFactorial(n);
 		// r!
@@ -34,6 +52,14 @@ public class AndyMathBig {
 		
 	}
 	
+	
+	
+	
+	
+	/*
+	 * Long Part
+	 */
+	
 	/**
 	 * 
 	 * @param input : any positive integer 
@@ -41,12 +67,38 @@ public class AndyMathBig {
 	 * let input be n, 
 	 * return n!
 	 */
-	public static BigInteger getFactorial(int number) {
+	public static BigInteger getFactorial(long number) {
 		BigInteger factorial = BigInteger.ONE;
-		for (int i = number; i > 0; i--) {
+		for (long i = number; i > 0l; i--) {
 			factorial = factorial.multiply(BigInteger.valueOf(i)); 
 		} 
 		return factorial;
+	}
+	
+	
+	
+	
+	/**
+	 * 
+	 * @param n : Object
+	 * @param r : Sample
+	 * @return nCr
+	 */
+	public static BigInteger nCr(long n, long r) {
+		// n!
+		BigInteger nFactorial = getFactorial(n);
+		// r!
+		BigInteger rFactorial = getFactorial(r);
+		// (n-r)!
+		BigInteger n_rFactorial = getFactorial(n-r);
+		// r!(n-r)!
+		BigInteger denominator = rFactorial.multiply(n_rFactorial);
+		
+		
+		BigInteger result = nFactorial.divide(denominator);
+		
+		return result;
+		
 	}
 	
 	/**

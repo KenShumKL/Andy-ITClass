@@ -11,7 +11,7 @@ import andy.UsefulMethod.AndyMathBig;
 public class Problem015 {
 
 	public static void main(String[] args) {
-		System.out.println(AndyMathBig.getBinomial(40, 20).toString());
+		System.out.println(AndyMathBig.nCr(40, 20).toString());
 		//The answer should be 137846528820.
 		//Yes, that's all
 	}
