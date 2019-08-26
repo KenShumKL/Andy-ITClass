@@ -9,6 +9,8 @@ package andy.UsefulMethod;
  */
 
 public class AndyMathTrigo {
+	
+	
 
 	/**
 	 * 
@@ -29,5 +31,57 @@ public class AndyMathTrigo {
 		int [] temp = {a, b, c};
 		return temp;
 		
+	}
+	
+	
+	
+	/**
+	 * 
+	 * @param a input -1 for unknown 
+	 * @param b input -1 for unknown
+	 * @param c hypotenuse, input -1 for unknown
+	 * @param angleA Opposite Angle of a, input -1 for unknown
+	 * @param angleB Opposite Angle of b, input -1 for unknown
+	 * @param angleC Opposite Angle of c, input -1 for unknown
+	 * @return An array
+	 */
+	public static double[] toTriArr(
+			double a, double b, double c, 
+			double angleA, double angleB, double angleC
+			) throws Exception{
+		
+		double[] triangle = {a ,b, c, angleA, angleB, angleC};
+		
+		if (c != Math.max(a, Math.max(b, c))) throw new Exception("toTriArr: c is not the hypotenuse");
+		return triangle;
+	}
+	
+	/**
+	 * 
+	 * @return Unfinished
+	 */
+	public static double[] solveTriangle(double[] triangle) {
+		
+		// Try Pythagorean theorem
+		
+		
+		// Check for solvable
+		
+		
+		
+		
+		
+		
+		
+		
+		return null;
+	}
+	
+	/**
+	 * 
+	 * @return Unfinished
+	 */
+	public static double[] lawOfCotangent() {
+		return null;
 	}
 }

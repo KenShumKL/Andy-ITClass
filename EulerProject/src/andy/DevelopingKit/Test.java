@@ -10,7 +10,8 @@ import andy.UsefulMethod.*;
 @SuppressWarnings("unused")
 public class Test {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
+//		System.out.println(a[1]);
 	}
 	
 	public static void printArr(int[] arr) {
